@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:3em;
+    width:100%;
+    border-bottom: 1px solid;
+    border-color: white;
+}
+
+.logos {
+    padding: 1em;
+}
+
+.fa-brands, .fa-solid {
+    color:white;
+}
+.whitetext {
+    color: #fff;
+}
+.greentext {
+    color: #22cf99;
+}
+
+section {
+    color: white;
+}
