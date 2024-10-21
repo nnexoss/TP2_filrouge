@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #041821;
     color:white;
 }
 
@@ -20,18 +20,36 @@ header {
 .fa-brands, .fa-solid {
     color:white;
 }
-.whitetext {
-    color: #fff;
+.greytext {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    color: #e5e5e5;
 }
 .greentext {
-    color: #22cf99;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    color: #1bd79e;
 }
 
 section {
     color: white;
+    margin-left: 5%;
+
 }
 
-.navspan:hover{
-    background-color: #22cf99;
+.navspan {
+    
+}
+
+.navspan:hover {
+    background-color: #1bd79e;
     cursor: pointer;
+}
+
+.para {
+    color: #808080
+}
+
+footer {
+    text-align: center;
 }
