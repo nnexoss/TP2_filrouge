@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    color:white;
 }
 
 header {
@@ -28,4 +29,9 @@ header {
 
 section {
     color: white;
+}
+
+.navspan:hover{
+    background-color: #22cf99;
+    cursor: pointer;
 }
