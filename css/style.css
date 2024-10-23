@@ -1,16 +1,27 @@
 body {
     background-color: #041821;
-    color:white;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 header {
-    display:flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    height:3em;
-    width:100%;
-    border-bottom: 1px solid;
-    border-color: white;
+    padding: 10px;
+    border-bottom: solid 1px #455761;
+}
+
+header p {
+    color:white;
+    font-family: "Yeseva";
+    font-size: 17px;
+}
+
+.nom {
+    padding: 8px;
+    padding-left: 0px;
+    margin:0;
 }
 
 .logos {
@@ -37,9 +48,6 @@ section {
 
 }
 
-.navspan {
-    
-}
 
 .navspan:hover {
     background-color: #1bd79e;
