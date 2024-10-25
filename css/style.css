@@ -1,63 +1,184 @@
 body {
-    background-color: #041821;
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
+  background-color: #041821;
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 10px;
-    border-bottom: solid 1px #455761;
+  border-bottom: solid 1px #5f5f5f;
+
 }
 
-header p {
-    color:white;
-    font-family: "Yeseva";
-    font-size: 17px;
+/* Style des sections */
+section {
+  font-family: "Yeseva One", serif;
+  margin-top: 3%;
 }
+
+.presentation p {
+  color: rgb(255, 255, 255);
+  width: 80vw;
+  font-size: 50px;
+  margin: auto;
+  font-weight: bold;
+}
+
+#cee {
+  color: rgb(23, 213, 154);
+  width: 80vw;
+  margin: auto;
+  font-weight: bold;
+}
+
+/* Texte lorem */
+.lorem {
+  color: grey;
+  font-size: 18px;
+  width: 50%;
+  margin-left: 9%;
+  margin-top: 2%;
+  padding: 4px;
+}
+
+.greentext {
+  color: #1bd79e;
+}
+
+
+/* Conteneur en-tête */
+.headercont {
+  display: flex;
+}
+
+.grid-item {
+  text-align: center;
+}
+
 
 .nom {
-    padding: 8px;
-    padding-left: 0px;
-    margin:0;
+  padding-left: 12px;
+  width: 50%;
 }
 
-.logos {
-    padding: 1em;
-}
-
-.fa-brands, .fa-solid {
-    color:white;
-}
-.greytext {
-    font-family: "Yeseva One", serif;
-    font-weight: 400;
-    color: #e5e5e5;
-}
-.greentext {
-    font-family: "Yeseva One", serif;
-    font-weight: 400;
-    color: #1bd79e;
-}
-
-section {
-    color: white;
-    margin-left: 5%;
-
+header div p {
+  color: #fff;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 25px;
 }
 
 
-.navspan:hover {
-    background-color: #1bd79e;
-    cursor: pointer;
+/* Conteneur des icônes */
+.icons {
+  padding: 8px;
+  text-align: right;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.para {
-    color: #808080
+/* Icônes */
+.icons i {
+  margin-left: 25px;
+  color: rgb(255, 255, 255);
 }
 
+.nav ul {
+  display: flex;
+  margin: 0;
+  padding-top: 5px;
+  justify-content: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Eléments de la liste */
+.nav li {
+  margin-right: 20px;
+  text-align: center;
+  display: block;
+}
+
+/* Arrière plan vert */
+.nav li:hover {
+  background-color: #1bd79e;
+  cursor: pointer;
+}
+
+/* Pied de page */
 footer {
-    text-align: center;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 20px;
+}
+
+footer #footer_ex {
+  font-size: 15px;
+  text-align: center;
+}
+
+footer * {
+  color:grey;
+}
+
+.grid-cont{
+  display:grid;
+  padding:5px;
+}
+/* Images dans la grille */
+.grid-cont img{
+  width: 98%;
+  height: auto;
+  display: block;
+  padding: 2px;
+}
+
+
+
+/* Grid pour grand écran */
+@media (min-width: 1025px) {
+  .grid-cont {
+      grid-template-columns: repeat(4, 1fr);
+      width: 80vw;
+      margin: auto;
+  }
+  .grid-parent {
+      padding-top: 30px;
+      margin: 40px auto;
+  }
+  
+}
+
+/* Grid pour tablette */
+@media (min-width: 640px) and (max-width: 1024px) {
+  .grid-cont {
+      grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-parent {
+      padding-top: 30px;
+      margin: 40px auto;
+  }
+}
+
+/* Grid pour mobile */
+@media (max-width: 640px) {
+  .grid-cont {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-parent {
+      padding-top: 30px;
+      margin: 40px auto;
+  }
+
+  .headercont {
+      display: block;
+      padding-bottom: 2vh;
+  }
+  .nom,
+  .icons {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+  }
+  .grid-cont img:nth-child(n + 10) {
+      display: none;
+  }
 }
